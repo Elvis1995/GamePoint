@@ -1,0 +1,57 @@
+.work-example {
+  .logo-img {
+    top: 40%;
+  }
+
+  h2 {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+
+    font-size: .6em;
+    color: $white;
+    text-shadow: $ts;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .work-example {
+    h2 {
+      font-size: .8em;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .work-example {
+    h2 {
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .work-example {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .work-example {
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-example {
+    h2 {
+      font-size: 3em;
+    }
+  }
+}

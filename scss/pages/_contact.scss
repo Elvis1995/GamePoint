@@ -1,0 +1,79 @@
+.contact-main {
+  @extend %center;
+
+  form {
+    width: 75%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid $gray;
+    border-radius: 3px;
+
+    line-height: $lh;
+    font-weight: $fw;
+  }
+
+  input, textarea {
+    border: none;
+    outline: none;
+    resize: none;
+
+    width: 100%;
+    padding: 1em;
+    margin: 10px 0 20px;
+    border-radius: 3px;
+    background: $gray;
+
+    &:focus {
+      border: 2px solid $red;
+    }
+  }
+}
+
+.row {
+  @extend %center;
+  width: 100%;
+
+  .col-75 {
+    width: 100%;
+  }
+
+  .submit {
+    font-size: .8em;
+    background: $green;
+    color: $white;
+
+    &:focus {
+      border: none;
+      background: invert($green);
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .row {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .col-25 {
+      width: 25%;
+      text-align: right;
+      margin-right: 1em;
+    }
+
+    .col-75 {
+      width: 75%;
+    }
+
+    .submit {
+      width: 10em;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .contact-main {
+    form {
+      width: 50%;
+    }
+  }
+}

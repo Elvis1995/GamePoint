@@ -1,0 +1,26 @@
+%background-image {
+  width: 100%;
+}
+
+%center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+%center-space {
+  display: flex;
+  justify-content: space-around;
+}
+
+%center-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

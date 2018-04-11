@@ -1,0 +1,68 @@
+.header-start {
+  height: 4em;
+}
+
+header {
+  background-color: black;
+  color: $white;
+
+  height: 4em;
+  width: 100%;
+  padding: 0 1em;
+  @extend %center-vertically;
+
+  h1 {
+    position: absolute;
+    top: 25%;
+    right: 1em;
+    padding: 6px;
+    margin: -6px;
+
+    font-size: 1em;
+    border: 2px solid $white;
+    border-radius: 15px;
+  }
+}
+
+.desktop-menu {
+  display: none;
+  width: 80%;
+  font-size: .8em;
+
+  ul {
+    @extend %center-space;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: $red;
+      transition: all .3s ease;
+    }
+  }
+}
+
+@media screen and (min-width: 260px) {
+  header {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .desktop-menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .desktop-menu {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}

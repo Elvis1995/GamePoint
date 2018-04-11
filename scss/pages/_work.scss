@@ -1,0 +1,30 @@
+.work-wrap {
+
+  @extend %center-wrap;
+
+  a {
+    color: $black;
+    margin: .5em;
+  }
+
+  img {
+    @extend %background-image;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  @media screen and (min-width: 760px) {
+    a {
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    a {
+      width: 30%;
+    }
+  }
+}
